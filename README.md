@@ -22,20 +22,20 @@ colorscheme soulbox-fg
 
 ```lua
 -- Example config in Lua
-vim.g.gruvbox_baby_function_style = "NONE"
-vim.g.gruvbox_baby_keyword_style = "italic"
+vim.g.soulbox_fg_function_style = "NONE"
+vim.g.soulbox_fg_keyword_style = "italic"
 
 -- Each highlight group must follow the structure:
 -- ColorGroup = {fg = "foreground color", bg = "background_color", style = "some_style(:h attr-list)"}
 -- See also :h highlight-guifg
 -- Example:
-vim.g.gruvbox_baby_highlights = {Normal = {fg = "#123123", bg = "NONE", style="underline"}}
+vim.g.soulbox_fg_highlights = {Normal = {fg = "#123123", bg = "NONE", style="underline"}}
 
 -- Enable telescope theme
-vim.g.gruvbox_baby_telescope_theme = 1
+vim.g.soulbox_fg_telescope_theme = 1
 
 -- Enable transparent mode
-vim.g.gruvbox_baby_transparent_mode = 1
+vim.g.soulbox_fg_transparent_mode = 1
 
 -- Load the colorscheme
 vim.cmd[[colorscheme soulbox-fg]]
@@ -43,14 +43,14 @@ vim.cmd[[colorscheme soulbox-fg]]
 
 ```vim
 " Example config in VimScript
-let g:gruvbox_baby_function_style = "NONE"
-let g:gruvbox_baby_keyword_style = "italic"
+let g:soulbox_fg_function_style = "NONE"
+let g:soulbox_fg_keyword_style = "italic"
 
 " Enable telescope theme
-let g:gruvbox_baby_telescope_theme = 1
+let g:soulbox_fg_telescope_theme = 1
 
 " Enable transparent mode
-let g:gruvbox_baby_transparent_mode = 1
+let g:soulbox_fg_transparent_mode = 1
 
 " Load the colorscheme
 colorscheme soulbox-fg
@@ -60,7 +60,7 @@ If you want access to the palette you have to do this:
 
 ```lua
 local colors = require("soulbox-fg.colors").config()
-vim.g.gruvbox_baby_highlights = {Normal = {fg = colors.orange}}
+vim.g.soulbox_fg_highlights = {Normal = {fg = colors.orange}}
 ```
 
 ## 🔌 Plugin support
