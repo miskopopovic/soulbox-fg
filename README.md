@@ -95,9 +95,9 @@ Extra color configs for **iTerm2** can be found on [extras](extras/)
 
 ![gruvbox palette](https://user-images.githubusercontent.com/31720261/147415431-13f6c6af-2f76-46c9-8448-20c71e359fc5.png)
 
-    dark = "#202020",
-    foreground = "#ebdbb2",
-    background = "#282828",
+  dark = "#202020",
+  foreground = "#ebdbb2",
+  background = "#282828",
     background_dark = "#242424",
     bg_light = "#32302f",
     medium_gray = "#504945",
