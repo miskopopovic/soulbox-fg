@@ -1,7 +1,7 @@
 local palette = {
   dark = "#202020",
   --foreground = "#ebdbb2",
-  foreground = "#D3C4A0",
+  foreground = "#BDB090",
   background = "#21262d",
   background_dark = "#242424",
   bg_light = "#32302f",
