@@ -370,7 +370,8 @@ function M.setup(config)
 		BufferLineIndicatorVisible = { fg = c.background },
 		BufferLineSeparator = { fg = c.background },
 		BufferLineBackground = { fg = c.soft_green, bg = c.background_dark },
-		BufferLineBufferSelected = { bg = c.lualine_bg },
+		BufferLineBufferVisible = { bg = c.lualine_bg },
+		BufferLineBufferSelected = { fg = c.milk, bg = c.lualine_bg },
 		BufferLineModifiedSelected = { fg = c.red, bg = c.lualine_bg },
 		BufferLineModified = { fg = c.red, bg = c.background_dark }
 
