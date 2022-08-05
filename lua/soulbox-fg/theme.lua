@@ -373,7 +373,12 @@ function M.setup(config)
 		BufferLineBufferVisible = { bg = c.lualine_bg },
 		BufferLineBufferSelected = { fg = c.milk, bg = c.lualine_bg },
 		BufferLineModifiedSelected = { fg = c.red, bg = c.lualine_bg },
-		BufferLineModified = { fg = c.red, bg = c.background_dark }
+		BufferLineModified = { fg = c.red, bg = c.background_dark },
+
+		-- Lsp
+		LspReferenceText = { bg = c.diff.change },
+		LspReferenceRead = { bg = c.diff.change },
+		LspReferenceWrite = { bg = c.diff.change },
 
 
 

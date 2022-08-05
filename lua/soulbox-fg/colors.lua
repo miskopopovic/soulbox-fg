@@ -24,7 +24,8 @@ local palette = {
   clean_green = "#8ec07c",
   milk = "#E7D7AD",
   lualine_bg = "#243240",
-  cursor_line = "#282E36",
+  -- cursor_line = "#282E36",
+  cursor_line = "#21262d",
   none = "NONE",
 }
 -- these are backgrounds
