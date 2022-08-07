@@ -43,7 +43,7 @@ function M.config(config)
   local intensity_map = {
     ["dark"] = {
       dark = "#161616",
-      background = "#161f28",
+      background = "#15181e",
       background_dark = "#161616",
     },
     ["medium"] = {
