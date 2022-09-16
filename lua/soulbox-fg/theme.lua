@@ -52,9 +52,9 @@ function M.setup(config)
 		Conceal = { fg = c.comment },
 		Directory = { fg = c.dark_gray },
 
-		TabLine = { bg = c.dark, fg = c.foreground }, -- tab pages line, not active tab page label
-		TabLineFill = { bg = c.background }, -- tab pages line, where there are no labels
-		TabLineSel = { fg = c.dark, bg = c.foreground }, -- tab pages line, active tab page label
+		-- TabLine = { bg = c.dark, fg = c.foreground }, -- tab pages line, not active tab page label
+		-- TabLineFill = { bg = c.background }, -- tab pages line, where there are no labels
+		-- TabLineSel = { fg = c.dark, bg = c.foreground }, -- tab pages line, active tab page label
 
 		DiffAdd = { bg = c.diff.add },
 		DiffChange = { bg = c.diff.change },
@@ -367,19 +367,44 @@ function M.setup(config)
 
 		-- BufferLine
 		BufferLineIndicatorSelected = { fg = c.soft_yellow, bg = c.lualine_bg },
-		BufferLineIndicatorVisible = { fg = c.background },
-		BufferLineSeparator = { fg = c.background },
-		BufferLineBackground = { fg = c.soft_green, bg = c.background_dark },
-		BufferLineBufferVisible = { bg = c.lualine_bg },
-		BufferLineBufferSelected = { fg = c.milk, bg = c.lualine_bg },
+		BufferLineIndicatorVisible = { fg = c.background, bg = c.lualine_bg },
+		BufferLineSeparator = { fg = c.lualine_bg },
+		BufferLineFill = { fg = c.blue_gray, bg = c.background },
+		BufferLineBackground = {fg = c.pink, bg = c.background_dark},
+		-- BufferLineBufferVisible = { bg = c.lualine_bg },
+		BufferLineBufferSelected = { fg = c.milk, bg = c.lualine_bg, style = "italic" },
 		BufferLineModifiedSelected = { fg = c.red, bg = c.lualine_bg },
 		BufferLineModified = { fg = c.red, bg = c.background_dark },
 
-		-- Lsp
-		LspReferenceText = { bg = c.diff.change },
-		LspReferenceRead = { bg = c.diff.change },
-		LspReferenceWrite = { bg = c.diff.change },
 
+		-- Lsp
+		-- LspReferenceText = { bg = c.diff.change },
+		-- LspReferenceRead = { bg = c.diff.change },
+		-- LspReferenceWrite = { bg = c.diff.change },
+
+		DiagnosticError =                       { fg = c.red },
+		DiagnosticVirtualTextError = 			{ fg = c.red },
+		DiagnosticFloatingError = 				{ fg = c.red },
+		DiagnosticSignError = 					{ fg = c.red, bg = c.background },
+		DiagnosticUnderlineError = 				{ undercurl = true, sp = c.red },
+		DiagnosticWarn =                     	{ fg = c.soft_yellow },
+		DiagnosticVirtualTextWarn  = 			{ fg = c.soft_yellow },
+		DiagnosticFloatingWarn = 				{ fg = c.soft_yellow },
+		DiagnosticSignWarn = 					{ fg = c.soft_yellow, bg = c.background },
+		DiagnosticUnderlineWarn = 				{ undercurl = true, sp = c.soft_yellow },
+		DiagnosticInformation =                 { fg = c.blue_gray },
+		DiagnosticVirtualTextInfo = 			{ fg = c.blue_gray },
+		DiagnosticFloatingInfo = 				{ fg = c.blue_gray },
+		DiagnosticSignInfo = 					{ fg = c.blue_gray, bg = c.background },
+		DiagnosticUnderlineInfo = 				{ undercurl = true, sp = c.blue_gray },
+		DiagnosticHint =                        { fg = c.magenta },
+		DiagnosticVirtualTextHint = 			{ fg = c.magenta },
+		DiagnosticFloatingHint = 				{ fg = c.magenta },
+		DiagnosticSignHint = 					{ fg = c.magenta, bg = c.background },
+		DiagnosticUnderlineHint  = 				{ undercurl = true, sp = c.magenta },
+		LspReferenceText = 						{ bg = c.diff.change }, -- used for highlighting "text" references
+		LspReferenceRead = 						{ bg = c.diff.change }, -- used for highlighting "read" references
+		LspReferenceWrite = 					{ bg = c.diff.change }, -- used for highlighting "write" references
 
 
 
