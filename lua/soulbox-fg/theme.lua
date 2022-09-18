@@ -47,7 +47,7 @@ function M.setup(config)
 		MoreMsg = { fg = c.foreground },
 		Error = { fg = c.red, style = "bold" },
 		Todo = { fg = c.magenta, style = "bold" },
-		CursorLineNr = { fg = c.comment, style = "bold" },
+		CursorLineNr = { fg = c.soft_yellow, style = "bold" },
 		debugPc = { bg = c.error_red },
 		Conceal = { fg = c.comment },
 		Directory = { fg = c.dark_gray },
@@ -297,8 +297,8 @@ function M.setup(config)
 		HopNextKey2 = { fg = c.milk, bg = c.dark },
 
 		-- indent blankline
-		IndentBlanklineChar = { fg = "#313131" },
-		IndentBlanklineSpaceChar = { fg = "#313131" },
+		IndentBlanklineChar = { fg = "#252525" },
+		IndentBlanklineSpaceChar = { fg = "#252525" },
 		IndentBlanklineContextChar = { fg = "#365050" },
 
 		FloatBorder = { bg = c.background_dark },
