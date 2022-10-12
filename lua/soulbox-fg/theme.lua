@@ -18,7 +18,7 @@ function M.setup(config)
 		Normal = { fg = c.foreground, bg = c.background },
 		Comment = { fg = c.comment, style = config.comment_style },
 		Constant = { fg = c.soft_yellow },
-		String = { fg = c.soft_green },
+		String = { fg = c.gray },
 		Character = { fg = c.soft_yellow },
 		Number = { fg = c.bright_yellow },
 		Boolean = { fg = c.orange },
@@ -134,6 +134,8 @@ function M.setup(config)
 		-- per language TreeSitter
 		pythonTSVariable = { fg = c.foreground, bg = c.NONE, style = "NONE" },
 		pythonDecorator = { fg = c.orange, style = "bold" },
+        -- pythonTripleQuotes = { fg = c.comment, bg = c.NONE, style = config.comment_style },
+        -- pythonString = { fg = c.comment, style = config.comment_style },
 		rustTSVariable = { fg = c.foreground, bg = c.NONE, style = "NONE" },
 		javascriptTSConditional = { fg = c.red },
 		javascriptTSVariable = { fg = c.light_blue },
