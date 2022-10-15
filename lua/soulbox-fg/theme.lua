@@ -368,15 +368,14 @@ function M.setup(config)
 		mailEmail = { fg = c.soft_yellow },
 
 		-- BufferLine
-		BufferLineIndicatorSelected = { fg = c.soft_yellow, bg = c.lualine_bg },
-		BufferLineIndicatorVisible = { fg = c.background, bg = c.lualine_bg },
-		BufferLineSeparator = { fg = c.lualine_bg },
-		BufferLineFill = { fg = c.blue_gray, bg = c.background },
-		BufferLineBackground = {fg = c.pink, bg = c.background_dark},
-		-- BufferLineBufferVisible = { bg = c.lualine_bg },
-		BufferLineBufferSelected = { fg = c.milk, bg = c.lualine_bg, style = "italic" },
-		BufferLineModifiedSelected = { fg = c.red, bg = c.lualine_bg },
-		BufferLineModified = { fg = c.red, bg = c.background_dark },
+		BufferLineIndicatorSelected = { fg = c.soft_yellow },
+		-- BufferLineIndicatorVisible = { fg = c.background, bg = c.lualine_bg },
+		-- BufferLineSeparator = { fg = c.lualine_bg },
+		-- BufferLineFill = { fg = c.blue_gray, bg = c.background },
+		-- BufferLineBackground = {fg = c.pink, bg = c.background_dark},
+		-- BufferLineBufferSelected = { fg = c.milk, bg = c.lualine_bg, style = "italic" },
+		-- BufferLineModifiedSelected = { fg = c.red, bg = c.lualine_bg },
+		-- BufferLineModified = { fg = c.red, bg = c.background_dark },
 
 
 		-- Lsp
