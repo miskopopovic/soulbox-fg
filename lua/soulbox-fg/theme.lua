@@ -417,7 +417,7 @@ function M.setup(config)
 		LspReferenceWrite = 					{ bg = c.diff.change }, -- used for highlighting "write" references
 
     -- illuminate
-    IlluminatedWordText = { bg = c.blue_gray },
+    -- IlluminatedWordText = { bg = c.blue_gray },
     IlluminatedWordRead = { bg = c.bg_light },
     IlluminatedWordWrite = { bg = c.bg_light },
 
